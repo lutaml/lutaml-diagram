@@ -22,9 +22,10 @@ Gem::Specification.new do |spec|
   spec.metadata["rubygems_mfa_required"] = "true"
 
   # The LML language core (parser, model compiler, executor, LML seam
-  # namespaces) lives in lutaml-model; this gem reopens Lutaml::Formatter
-  # and Lutaml::Layout with the render backends and ships the CLI.
-  spec.add_dependency "lutaml-model", "~> 0.8.159"
+  # namespaces) ships in lutaml-model from 0.8.188 (the lutaml-lml
+  # subsume); this gem reopens Lutaml::Formatter and Lutaml::Layout
+  # with the render backends and ships the CLI.
+  spec.add_dependency "lutaml-model", "~> 0.8.188"
   spec.add_dependency "elkrb", "~> 2.0"
   spec.add_dependency "thor"
 
